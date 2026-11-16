@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b2c">
+  <meta name="description" content="Orbital Hydrocarbon applies satellite remote sensing and surface expression analysis to help prioritize potential hydrocarbon exploration targets.">
+  <meta property="og:title" content="Orbital Hydrocarbon | Exploration Intelligence from Above">
+  <meta property="og:description" content="Satellite-led surface expression analysis for smarter hydrocarbon exploration decisions.">
+  <meta property="og:type" content="website">
+  <title>Orbital Hydrocarbon | Exploration Intelligence from Above</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js"}}
+  </script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Orbital Hydrocarbon home">
+        <img class="brand-logo" src="assets/orbital-logo-header.png" width="228" height="64" alt="Orbital Hydrocarbon, Advanced Energy Solutions">
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#technology">Technology</a><a href="#methodology">Methodology</a><a href="#research">Research</a><a href="#case-studies">Case studies</a><a href="#about">About</a>
+        <a class="nav-cta" href="#contact">Talk to our team <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-dark">
+      <div class="hero-grid"></div><div class="hero-glow"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> SATELLITE-LED EXPLORATION INTELLIGENCE</p>
+          <h1>Explore beneath the surface.<br><em>Start from above.</em></h1>
+          <p class="hero-lede">Satellite-led surface expression analysis to help exploration teams assess and prioritize potential hydrocarbon targets.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#contact">Request a technical consultation <span>↗</span></a><a class="text-link" href="#technology">Explore our technology <span>↓</span></a></div>
+          <div class="hero-proof"><span class="proof-line"></span><span>REMOTE SENSING</span><span>·</span><span>GEOLOGICAL INTELLIGENCE</span><span>·</span><span>TARGET PRIORITIZATION</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Illustrative 3D satellite scanning a geological terrain" role="img">
+          <div class="visual-label label-top"><span class="live-dot"></span> ORBITAL SCAN / ILLUSTRATIVE</div>
+          <canvas id="hero-canvas" aria-hidden="true"></canvas>
+          <div class="visual-coordinates"><span>GEO-SPATIAL MODEL</span><span>01 / 05</span></div>
+          <div class="visual-card"><span class="card-kicker">SURFACE EXPRESSION</span><strong>Signal-led<br>target assessment</strong><span class="card-rule"></span><small>Satellite data · Geoscience · Analysis</small></div>
+        </div>
+      </div>
+      <div class="hero-bottom container"><span>01 — EXPLORATION INTELLIGENCE</span><span>SCROLL TO DISCOVER <span class="scroll-arrow">↓</span></span></div>
+    </section>
+
+    <section class="intro section-light section-pad">
+      <div class="container intro-grid">
+        <div class="section-index reveal">01 / THE OPPORTUNITY</div>
+        <div class="intro-content reveal"><p class="eyebrow eyebrow-dark">A MORE INFORMED STARTING POINT</p><h2>Better-informed exploration<br>begins with <em>better signals.</em></h2><p class="body-large">Greenfield exploration can involve substantial capital, long timelines and complex field programmes. Orbital Hydrocarbon's approach introduces satellite-based screening as an additional layer of intelligence before more intensive follow-up investigation.</p></div>
+      </div>
+      <div class="container comparison">
+        <article class="comparison-card reveal">
+          <div class="comparison-top"><span class="micro-label">CONVENTIONAL STARTING POINT</span><span class="comparison-number">A</span></div>
+          <div class="comparison-illustration rig-illustration" aria-hidden="true"><div class="rig-tower"></div><div class="rig-ground"></div><div class="rig-wave w1"></div><div class="rig-wave w2"></div></div>
+          <h3>Field-intensive exploration</h3><p>Early exploration may depend on costly surveys, field logistics and drilling decisions across large areas.</p>
+        </article>
+        <article class="comparison-card comparison-featured reveal">
+          <div class="comparison-top"><span class="micro-label">THE ORBITAL APPROACH</span><span class="comparison-number">B</span></div>
+          <div class="comparison-illustration scan-illustration" aria-hidden="true"><div class="mini-earth"></div><div class="mini-satellite">✦</div><div class="mini-beam"></div><div class="mini-target"></div></div>
+          <h3>Satellite-led screening</h3><p>Assess potential surface expressions and prioritize areas for appropriate ground-based investigation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="technology section-dark section-pad" id="technology">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow-dot"></span> 02 / OUR TECHNOLOGY</p><h2>The <em>Analogue Technique.</em></h2></div><p class="heading-aside">A satellite-based approach to interpreting potential surface expressions associated with hydrocarbon systems.</p></div>
+        <div class="tech-layout">
+          <div class="tech-visual reveal"><div class="strata strata-1"></div><div class="strata strata-2"></div><div class="strata strata-3"></div><div class="fault"></div><div class="migration m1"></div><div class="migration m2"></div><div class="signal signal-1"></div><div class="signal signal-2"></div><div class="signal signal-3"></div><div class="tech-caption">CONCEPTUAL GEOLOGICAL CROSS-SECTION <span>NOT TO SCALE</span></div></div>
+          <div class="tech-content reveal"><span class="micro-label accent-label">PROPRIETARY METHODOLOGY</span><h3>Read the surface.<br>Investigate the signal.</h3><p>The presentation describes an algorithmic workflow that examines potential hydrocarbon-related surface indicators, including anomalies associated with geological structures and micro-seepage mechanisms.</p><p>These observations can contribute to target screening. They do not replace subsurface confirmation, field validation or seismic interpretation.</p><a class="button button-outline" href="#methodology">See how it works <span>↗</span></a></div>
+        </div>
+        <div class="signal-tabs reveal" role="tablist" aria-label="Potential surface indicators">
+          <button class="signal-tab active" role="tab" aria-selected="true" aria-controls="signal-panel" data-signal="halo">01 <span>Halo signature</span></button>
+          <button class="signal-tab" role="tab" aria-selected="false" aria-controls="signal-panel" data-signal="methane">02 <span>Thermogenic methane</span></button>
+          <button class="signal-tab" role="tab" aria-selected="false" aria-controls="signal-panel" data-signal="droplets">03 <span>Micro-hydrocarbon droplets</span></button>
+          <button class="signal-tab" role="tab" aria-selected="false" aria-controls="signal-panel" data-signal="film">04 <span>Hydrocarbon film</span></button>
+        </div>
+        <div class="signal-panel" id="signal-panel" role="tabpanel" tabindex="0"><div class="signal-panel-mark">◎</div><div><span class="micro-label">INDICATOR OVERVIEW</span><h3 id="signal-title">Halo signature</h3><p id="signal-description">The presentation discusses halo patterns as potential surface geochemical expressions around a subsurface system. Interpretation depends on local geology, data quality and independent verification.</p></div><span class="panel-index">01 / 04</span></div>
+      </div>
+    </section>
+
+    <section class="methodology section-light section-pad" id="methodology">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow eyebrow-dark">03 / THE WORKFLOW</p><h2>From orbit to<br><em>target prioritization.</em></h2></div><p class="heading-aside">A structured sequence that connects area definition, satellite analysis and follow-up exploration decisions.</p></div>
+        <div class="workflow">
+          <div class="workflow-line" aria-hidden="true"><span></span></div>
+          <article class="workflow-step reveal"><span class="step-no">01</span><div class="step-icon">⌖</div><div><h3>Define the area</h3><p>Establish the Area of Interest, exploration context and geographical boundaries.</p></div><span class="step-tag">AREA OF INTEREST</span></article>
+          <article class="workflow-step reveal"><span class="step-no">02</span><div class="step-icon">◉</div><div><h3>Assess satellite data</h3><p>Review suitable satellite imagery and relevant geospatial information for the study area.</p></div><span class="step-tag">DATA REVIEW</span></article>
+          <article class="workflow-step reveal"><span class="step-no">03</span><div class="step-icon">⌁</div><div><h3>Interpret surface expressions</h3><p>Evaluate relevant spectral, geological and geochemical indicators in context.</p></div><span class="step-tag">SIGNAL ASSESSMENT</span></article>
+          <article class="workflow-step reveal"><span class="step-no">04</span><div class="step-icon">◎</div><div><h3>Prioritize target zones</h3><p>Organize areas of interest for technical review and further investigation.</p></div><span class="step-tag">TARGET REVIEW</span></article>
+          <article class="workflow-step reveal"><span class="step-no">05</span><div class="step-icon">↗</div><div><h3>Plan verification</h3><p>Use the assessment to inform appropriate fieldwork, geochemical sampling or seismic follow-up.</p></div><span class="step-tag">FOLLOW-UP</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="research section-dark section-pad" id="research">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow-dot"></span> 04 / SCIENTIFIC CONTEXT</p><h2>Grounded in<br><em>geoscience.</em></h2></div><p class="heading-aside">Explore the scientific themes referenced in the technical presentation. Literature context is distinct from independent validation of the proprietary method.</p></div>
+        <div class="research-grid">
+          <article class="research-card reveal"><span class="research-no">01 / GEOCHEMISTRY</span><div class="research-art halo-art"><i></i><i></i><i></i><b></b></div><h3>Surface halo mechanisms</h3><p>Published work discusses how micro-seepage and near-surface geochemical changes may create spatial patterns above hydrocarbon accumulations.</p><span class="research-ref">Saunders et al. (1999) · Klusman (1993)</span></article>
+          <article class="research-card reveal"><span class="research-no">02 / REMOTE SENSING</span><div class="research-art orbit-art"><div class="orbit-ring"></div><div class="orbit-earth"></div><div class="orbit-sat">✦</div></div><h3>From ground to orbit</h3><p>Research explores relationships between surface geochemical effects, mineral alteration and remotely observed spectral patterns.</p><span class="research-ref">Tedesco (1995) · van der Meer et al. (2002)</span></article>
+          <article class="research-card reveal"><span class="research-no">03 / MIGRATION</span><div class="research-art migration-art"><div class="migration-layer"></div><div class="migration-arrow">↑</div><div class="migration-drop">●</div></div><h3>Gas migration & thermodynamics</h3><p>Studies discuss gas migration, pressure changes and the movement of hydrocarbon components through geological structures.</p><span class="research-ref">England et al. (1987) · Cathles & Adams (2005)</span></article>
+        </div>
+        <p class="research-note">References are presented as scientific context based on the supplied company material. Full bibliographic details and publication links should be checked before publication.</p>
+      </div>
+    </section>
+
+    <section class="case-study section-light section-pad" id="case-studies">
+      <div class="container case-layout">
+        <div class="case-copy reveal"><p class="eyebrow eyebrow-dark">05 / CASE STUDY FRAMEWORK</p><h2>Evidence deserves<br><em>context.</em></h2><p class="body-large">The supplied presentation includes an Uttar Pradesh example and a Buxar benchmark comparison. A public case study should show the study design, available data, interpretation, verification basis and limitations together.</p><div class="case-points"><span>01 <b>Study area & context</b></span><span>02 <b>Observed indicators</b></span><span>03 <b>Reference comparison</b></span><span>04 <b>Limitations & next steps</b></span></div><a class="text-link text-link-dark" href="#contact">Discuss a study area <span>↗</span></a></div>
+        <div class="case-map reveal" aria-label="Illustrative geospatial anomaly map">
+          <div class="map-grid"></div><div class="map-contours contour-a"></div><div class="map-contours contour-b"></div><div class="map-heat"></div><div class="map-crosshair"></div><span class="map-tag">ILLUSTRATIVE DATA VIEW</span><span class="map-scale">0 ───── 10 KM</span><div class="map-legend"><span><i></i> Relative anomaly intensity</span><div class="legend-gradient"></div><small>LOW <b>HIGH</b></small></div>
+        </div>
+      </div>
+      <div class="container case-disclaimer"><span>!</span><p>Map artwork is illustrative and does not represent a verified discovery, a live satellite feed or a published project location.</p></div>
+    </section>
+
+    <section class="applications section-light">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow eyebrow-dark">06 / APPLICATION AREAS</p><h2>Intelligence for<br><em>exploration teams.</em></h2></div><p class="heading-aside">Potential applications depend on the geology, available data, study design and technical requirements of each project.</p></div>
+        <div class="application-grid">
+          <article class="application-card reveal"><div class="app-visual app-onshore"><span>01</span><div class="app-horizon"></div></div><h3>Onshore exploration</h3><p>Screening and assessment of selected onshore exploration areas.</p></article>
+          <article class="application-card reveal"><div class="app-visual app-offshore"><span>02</span><div class="app-platform"></div></div><h3>Offshore exploration</h3><p>Potential assessment in offshore settings where suitable data and methods are available.</p></article>
+          <article class="application-card reveal"><div class="app-visual app-planning"><span>03</span><div class="app-map-lines"></div></div><h3>Exploration planning</h3><p>Spatial interpretation to help inform follow-up investigation priorities.</p></article>
+          <article class="application-card reveal"><div class="app-visual app-collab"><span>04</span><div class="app-network"></div></div><h3>Technical collaboration</h3><p>Engagement with operators, geoscientists and research partners.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-dark section-pad" id="about">
+      <div class="container about-layout"><div class="about-symbol reveal"><div class="symbol-orbit"></div><div class="symbol-core">O</div><span class="symbol-caption">ADVANCED ENERGY SOLUTIONS</span></div><div class="about-copy reveal"><p class="eyebrow"><span class="eyebrow-dot"></span> 07 / ABOUT ORBITAL</p><h2>New perspectives<br>for a complex<br><em>subsurface world.</em></h2><p>Orbital Hydrocarbon focuses on satellite remote sensing and surface expression analysis for hydrocarbon exploration. Our approach brings together geospatial observation, geological context and structured technical assessment.</p><a class="button button-outline" href="#contact">Start a conversation <span>↗</span></a></div></div>
+    </section>
+
+    <section class="contact section-light section-pad" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-copy reveal"><p class="eyebrow eyebrow-dark">08 / LET'S CONNECT</p><h2>Let's evaluate your<br><em>exploration objectives.</em></h2><p>Tell us a little about your project. Our team can discuss the study context, data requirements and possible next steps.</p><div class="contact-details"><a href="mailto:orbitalhydrocarbon@gmail.com"><span>EMAIL</span>orbitalhydrocarbon@gmail.com ↗</a><a href="tel:+919377779610"><span>PHONE</span>+91 93777 79610 ↗</a></div></div>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-heading"><span class="micro-label">TECHNICAL ENQUIRY</span><span class="form-required">* REQUIRED</span></div>
+          <div class="form-row"><label>Full name *<input name="name" autocomplete="name" required maxlength="100" placeholder="Your name"></label><label>Company / organization<input name="company" autocomplete="organization" maxlength="120" placeholder="Company name"></label></div>
+          <div class="form-row"><label>Business email *<input name="email" type="email" autocomplete="email" required maxlength="160" placeholder="name@company.com"></label><label>Country<input name="country" autocomplete="country-name" maxlength="80" placeholder="Country"></label></div>
+          <label>Area of interest<select name="interest"><option value="">Select an option</option><option>Onshore exploration</option><option>Offshore exploration</option><option>Technical collaboration</option><option>Research partnership</option><option>Other</option></select></label>
+          <label>How can we help?<textarea name="message" rows="4" maxlength="2000" placeholder="Briefly describe your exploration objectives"></textarea></label>
+          <label class="consent"><input type="checkbox" name="consent" required><span>I agree to be contacted regarding this enquiry. *</span></label>
+          <button class="button button-primary form-submit" type="submit">Prepare email enquiry <span>↗</span></button>
+          <p class="form-note" id="form-status" aria-live="polite">Your email application will open with the enquiry details. Do not include confidential coordinates or proprietary project data.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-dark">
+    <div class="container footer-main"><a class="brand brand-footer" href="#top" aria-label="Orbital Hydrocarbon home"><img class="brand-logo" src="assets/orbital-logo-header.png" width="228" height="64" alt="Orbital Hydrocarbon, Advanced Energy Solutions"></a><p>Satellite-led surface expression analysis<br>for hydrocarbon exploration intelligence.</p><a class="back-top" href="#top">BACK TO TOP ↑</a></div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Orbital Hydrocarbon. All rights reserved.</span><span>SCIENTIFIC CURIOSITY. EXPLORATION INTELLIGENCE.</span></div>
+    <div class="container footer-legal">All visualizations are illustrative. Satellite-based screening does not establish the presence, volume or commercial viability of hydrocarbons. Independent geological, geochemical, field and subsurface verification remains necessary. Website content is subject to technical and legal approval.</div>
+  </footer>
+</body>
+</html>
